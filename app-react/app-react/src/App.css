@@ -1,0 +1,38 @@
+.page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+}
+
+.services-boutons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.services button {
+  padding: 10px 15px;
+  border: 2px solid #1f2937;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+}
+
+.services button.actif {
+  background: #1f2937;
+  color: white;
+}
+
+.services-detail {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.services .prix {
+  font-weight: bold;
+  color: #f59e0b;
+}
