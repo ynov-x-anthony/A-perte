@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import CarCard from './CarCard'
 
 type Voiture = {
   id: number
@@ -6,6 +7,8 @@ type Voiture = {
   modele: string
   annee: number
   prix: number
+  options: string[]
+  image: string
 }
 
 type CarListProps = {
@@ -32,17 +35,19 @@ function CarList({ voitures }: CarListProps) {
         </select>
       </label>
       <p>{voituresFiltrees.length} voiture(s)</p>
-      <ul>
+      <div className="cartes">
         {voituresFiltrees.map((v) => (
-          <li key={v.id}>
-            <strong>
-              {v.marque} {v.modele}
-            </strong>
-            <span>{v.annee}</span>
-            <span>{v.prix} €</span>
-          </li>
+          <CarCard
+            key={v.id}
+            marque={v.marque}
+            modele={v.modele}
+            annee={v.annee}
+            prix={v.prix}
+            options={v.options}
+            image={v.image}
+          />
         ))}
-      </ul>
+      </div>
     </div>
   )
 }
