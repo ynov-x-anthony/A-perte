@@ -1,5 +1,4 @@
 import CarList from './components/CarList'
-import './App.css'
 
 const voitures = [
   { id: 1, marque: 'Peugeot', modele: '208', annee: 2021, prix: 14900 },
@@ -13,7 +12,7 @@ const voitures = [
 
 function App() {
   return (
-    <div className="page">
+    <div>
       <h2>Nos voitures</h2>
       <CarList voitures={voitures} />
     </div>

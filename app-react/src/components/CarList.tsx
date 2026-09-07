@@ -20,7 +20,7 @@ function CarList({ voitures }: CarListProps) {
     marque === 'Toutes' ? voitures : voitures.filter((v) => v.marque === marque)
 
   return (
-    <div className="car-list">
+    <div>
       <label>
         Marque :
         <select value={marque} onChange={(e) => setMarque(e.target.value)}>
