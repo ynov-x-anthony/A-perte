@@ -15,12 +15,11 @@ function Services({ services }: ServicesProps) {
   const [selection, setSelection] = useState<Service | null>(null)
 
   return (
-    <div className="services">
-      <div className="services-boutons">
+    <div>
+      <div>
         {services.map((service) => (
           <button
             key={service.id}
-            className={selection?.id === service.id ? 'actif' : ''}
             onClick={() => setSelection(service)}
           >
             {service.nom}
@@ -28,10 +27,10 @@ function Services({ services }: ServicesProps) {
         ))}
       </div>
       {selection ? (
-        <div className="services-detail">
+        <div>
           <h3>{selection.nom}</h3>
           <p>{selection.description}</p>
-          <p className="prix">À partir de {selection.prix} €</p>
+          <p>À partir de {selection.prix} €</p>
         </div>
       ) : (
         <p>Cliquez sur un service pour voir le détail.</p>

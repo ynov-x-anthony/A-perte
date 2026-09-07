@@ -1,5 +1,4 @@
 import Services from './components/Services'
-import './App.css'
 
 const services = [
   { id: 1, nom: 'Révision', description: 'Contrôle complet du véhicule et vidange.', prix: 149 },
@@ -10,7 +9,7 @@ const services = [
 
 function App() {
   return (
-    <div className="page">
+    <div>
       <h2>Nos services</h2>
       <Services services={services} />
     </div>
