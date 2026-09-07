@@ -1,5 +1,4 @@
 import Header from './components/Header'
-import './App.css'
 
 function App() {
   return (
@@ -20,7 +19,7 @@ function App() {
           <h2>Contact</h2>
         </section>
       </main>
-      <footer>© 2026 A Perte - Lyon</footer>
+      <footer>2026 A Perte - Lyon</footer>
     </>
   )
 }
