@@ -23,7 +23,7 @@ function CarList({ voitures }: CarListProps) {
     marque === 'Toutes' ? voitures : voitures.filter((v) => v.marque === marque)
 
   return (
-    <div className="car-list">
+    <div>
       <label>
         Marque :
         <select value={marque} onChange={(e) => setMarque(e.target.value)}>
@@ -35,7 +35,7 @@ function CarList({ voitures }: CarListProps) {
         </select>
       </label>
       <p>{voituresFiltrees.length} voiture(s)</p>
-      <div className="cartes">
+      <div>
         {voituresFiltrees.map((v) => (
           <CarCard
             key={v.id}

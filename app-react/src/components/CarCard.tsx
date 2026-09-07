@@ -13,20 +13,20 @@ function CarCard({ marque, modele, annee, prix, options, image }: CarCardProps) 
   const [favori, setFavori] = useState(false)
 
   return (
-    <div className={favori ? 'car-card favori' : 'car-card'}>
+    <div>
       <h3>
         {marque} {modele}
       </h3>
-      <img className="car-image" src={image} alt={`${marque} ${modele}`} />
+      <img src={image} width="200" alt={`${marque} ${modele}`} />
       <p>Année : {annee}</p>
-      <p className="prix">{prix} €</p>
+      <p>{prix} €</p>
       <ul>
         {options.map((option) => (
           <li key={option}>{option}</li>
         ))}
       </ul>
       <button onClick={() => setFavori(!favori)}>
-        {favori ? '♥ Dans mes favoris' : '♡ Ajouter aux favoris'}
+        {favori ? 'Retirer des favoris' : 'Ajouter aux favoris'}
       </button>
     </div>
   )

@@ -17,7 +17,7 @@ function Contact({ garage, telephone, horaires }: ContactProps) {
   }
 
   return (
-    <div className="contact">
+    <div>
       <div>
         <p>Téléphone : {telephone}</p>
         <ul>
@@ -27,7 +27,7 @@ function Contact({ garage, telephone, horaires }: ContactProps) {
         </ul>
       </div>
       {envoye ? (
-        <p className="merci">
+        <p>
           Merci {nom}, l'équipe de {garage} vous répond très vite.
         </p>
       ) : (

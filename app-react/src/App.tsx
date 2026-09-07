@@ -5,7 +5,6 @@ import Contact from './components/Contact'
 import peugeot208 from './assets/peugeot-208.jpg'
 import renaultClio from './assets/renault-clio.jpg'
 import teslaModel3 from './assets/tesla-model3.png'
-import './App.css'
 
 const voitures = [
   { id: 1, marque: 'Peugeot', modele: '208', annee: 2021, prix: 14900, options: ['Climatisation', 'GPS', 'Bluetooth'], image: peugeot208 },
@@ -46,7 +45,7 @@ function App() {
           />
         </section>
       </main>
-      <footer>© 2026 A Perte - Lyon</footer>
+      <footer>2026 A Perte - Lyon</footer>
     </>
   )
 }

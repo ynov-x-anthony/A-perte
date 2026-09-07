@@ -10,7 +10,7 @@ function Header({ nom, slogan, liens }: HeaderProps) {
   const [menuOuvert, setMenuOuvert] = useState(false)
 
   return (
-    <header className="header">
+    <header>
       <div>
         <h1>{nom}</h1>
         <p>{slogan}</p>
